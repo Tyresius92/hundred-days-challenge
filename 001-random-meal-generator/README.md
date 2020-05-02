@@ -24,3 +24,11 @@ About an hour and 45 minutes
 I tried out the BlueprintJS react library, and found that it wasn't really to my speed. I really want a design system that works right out of the box. I want a design system that is opinionated, rather than giving me only the lowest common denominator of components.
 
 For instance, some libraries give a Button component, and automatically swap in the underlying a tag if there's an href present, but this library makes me make the conscious decision to use an AnchorButton instead of a Button. Similarly, the lack of a drop in Container component means that I have to do more work to get my MVP up and running. I think the lack of opinion does make it easier once my app has legs and I want to start doing really custom things, but for one off apps, I wouldn't recommend it.
+
+### Links Used
+
+[BlueprintJS Docs](https://blueprintjs.com/docs/#blueprint)
+[Axios Docs](https://github.com/axios/axios)
+[The Meal DB](https://www.themealdb.com/api.php)
+[Rendering Newlines in strings in React](https://www.freecodecamp.org/forum/t/newline-in-react-string-solved/68484)
+[Centering Images with CSS](https://www.freecodecamp.org/news/how-to-center-an-image-using-text-align/)
