@@ -27,8 +27,12 @@ For instance, some libraries give a Button component, and automatically swap in 
 
 ### Links Used
 
-[BlueprintJS Docs](https://blueprintjs.com/docs/#blueprint)
-[Axios Docs](https://github.com/axios/axios)
-[The Meal DB](https://www.themealdb.com/api.php)
-[Rendering Newlines in strings in React](https://www.freecodecamp.org/forum/t/newline-in-react-string-solved/68484)
-[Centering Images with CSS](https://www.freecodecamp.org/news/how-to-center-an-image-using-text-align/)
+- [BlueprintJS Docs](https://blueprintjs.com/docs/#blueprint)
+- [Axios Docs](https://github.com/axios/axios)
+- [The Meal DB](https://www.themealdb.com/api.php)
+- [Rendering Newlines in strings in React](https://www.freecodecamp.org/forum/t/newline-in-react-string-solved/68484)
+- [Centering Images with CSS](https://www.freecodecamp.org/news/how-to-center-an-image-using-text-align/)
+
+### Possible Extensions
+
+Instead of loading an a new recipe, make it so clicking the get recipe button pushes down the old recipe, so you eventually just get a long list of recipes.
