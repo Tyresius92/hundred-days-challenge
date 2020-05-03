@@ -4,4 +4,5 @@ This repo is a collection of 100 small projects, intended to keep the habit goin
 
 ### Potential project ideas
 
-[FlorinPop's 100 Days Challenge](https://codepen.io/FlorinPop17/full/VwYWMOa)
+- [FlorinPop's 100 Days Challenge](https://codepen.io/FlorinPop17/full/VwYWMOa)
+- Dice roller
