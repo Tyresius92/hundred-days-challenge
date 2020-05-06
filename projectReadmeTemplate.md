@@ -11,3 +11,5 @@
 ### What I learned
 
 ### Links Used
+
+### Thing to Celebrate / Moment of Gratitude

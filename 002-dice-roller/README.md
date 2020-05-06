@@ -32,3 +32,7 @@ At some point, just write a test that just loosely asserts on your behavior. Sur
 
 -   Refactor the UI to make it pretty.
 -   Write a text box that parses a string die roll (2d4 + 3d6 + 7d17)
+
+### Thing to Celebrate / Moment of Gratitude
+
+Got a cool thing I can build off of as a base at some later point.

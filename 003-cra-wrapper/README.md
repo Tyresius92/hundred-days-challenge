@@ -35,3 +35,7 @@ This was a lot easier than expected! I don't know why I didn't do this before. :
 -   [Delete all files but one](https://www.tecmint.com/delete-all-files-in-directory-except-one-few-file-extensions/)
 -   [Bash: sed](https://askubuntu.com/questions/20414/find-and-replace-text-within-a-file-using-commands)
 -   [sed with wildcards](https://stackoverflow.com/questions/9189120/using-sed-with-wildcard)
+
+### Thing to Celebrate / Moment of Gratitude
+
+I don't have to do that boilerplate configuration EVER AGAIN!
