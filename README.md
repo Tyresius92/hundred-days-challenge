@@ -7,3 +7,4 @@ This repo is a collection of 100 small projects, intended to keep the habit goin
 -   [FlorinPop's 100 Days Challenge](https://codepen.io/FlorinPop17/full/VwYWMOa)
 -   Dice roller
 -   A bash script that runs Create-React-App then does my custom configuration
+-   A Text component that can be reused throughout an App (possible extension: heading, subheading, and section title components)
