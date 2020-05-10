@@ -8,3 +8,7 @@ This repo is a collection of 100 small projects, intended to keep the habit goin
 -   Dice roller
 -   A bash script that runs Create-React-App then does my custom configuration
 -   A Text component that can be reused throughout an App (possible extension: heading, subheading, and section title components)
+
+### Random stuff to look through
+
+https://github.com/public-apis/public-apis
