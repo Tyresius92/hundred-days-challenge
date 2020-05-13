@@ -1,0 +1,33 @@
+.wrapper {
+  height: 160px;
+}
+#spinner {
+  animation: spin 2s linear infinite;
+  transform-origin: center;
+  /*margin: 60px 0 0 60px;*/
+  font-size: 100px;
+  position: static;
+}
+@keyframes spin {
+  0% {
+    transform: scale(1, 1) translateY(100px) rotate(0deg);
+  }
+  15% {
+    transform: scale(1.1, 0.9) translateY(80px) rotate(36deg);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(0px) rotate(108deg);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(40px) rotate(180deg);
+  }
+  62% {
+    transform: scale(1, 1) translateY(70px) rotate(240deg);
+  }
+  75% {
+    transform: scale(1, 1) translateY(90px) rotate(300deg);
+  }
+  100% {
+    transform: scale(1, 1) translateY(100px) rotate(360deg);
+  }
+}
