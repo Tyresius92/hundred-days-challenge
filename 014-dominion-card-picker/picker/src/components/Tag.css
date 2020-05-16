@@ -1,0 +1,151 @@
+.tag {
+	display: inline-block;
+	border-radius: 15px;
+	padding: 5px;
+	margin: 5px;
+}
+
+.action {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.treasure {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.event {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.attack {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.victory {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.reaction {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.duration {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.prize {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.curse {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.ruins {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.looter {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.knight {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.shelter {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.reserve {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.traveler {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.castle {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.gathering {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.landmark {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.fate {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.night {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.heirloom {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.doom {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.zombie {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.spirit {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.boon {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.hex {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.state {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.artifact {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+.project {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
