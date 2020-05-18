@@ -1,0 +1,30 @@
+.singleNumber {
+	display: inline-block;
+	width: 50px;
+	padding: 0;
+	margin: 20px;
+}
+
+.horizontal {
+	height: 10px;
+	margin: 0;
+	padding: 0;
+}
+
+.vertical {
+	height: 100px;
+	margin: 0;
+	padding: 0;
+}
+
+.alive {
+	background-color: green;
+	margin: 0;
+	padding: 0 !important;
+	border-radius: 25%;
+}
+
+.dead {
+	margin: 0 0;
+	padding: 0 !important;
+}
