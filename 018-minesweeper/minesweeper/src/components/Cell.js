@@ -14,7 +14,7 @@ const Cell = ({ isHidden, value, row, col, onClick }) => (
 
 Cell.propTypes = {
   isHidden: PropTypes.bool,
-  value: PropTypes.oneOf([PropTypes.number, PropTypes.string]).isRequired,
+  value: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
   onClick: PropTypes.func.isRequired,
   row: PropTypes.number.isRequired,
   col: PropTypes.number.isRequired,

@@ -26,7 +26,8 @@ Board.propTypes = {
   cells: PropTypes.arrayOf(
     PropTypes.arrayOf(
       PropTypes.shape({
-        value: PropTypes.oneOf([PropTypes.number, PropTypes.string]).isRequired,
+        value: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+          .isRequired,
         hidden: PropTypes.bool.isRequired,
       })
     ).isRequired
