@@ -22,7 +22,7 @@ const createUser = async (username, email, password) => {
   );
 
   return {
-    user: result.rows[0],
+    ...result.rows[0],
   };
 };
 
