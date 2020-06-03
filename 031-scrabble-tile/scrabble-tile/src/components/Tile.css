@@ -1,0 +1,16 @@
+.tile {
+  background-color: tan;
+  text-align: center;
+  display: inline-block;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.letter {
+}
+
+.pointValue {
+  text-align: right;
+  padding-right: 10px;
+}
