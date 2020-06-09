@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first Vue app</title>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <div id="app">
+      {{ message }}
+      <ul>
+        <li v-for="item in items">
+          {{ item }}
+        </li>
+      </ul>
+    </div>
+
+    <ul id="list">
+      <li v-for="item in items">
+        {{ item }}
+      </li>
+    </ul>
+
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          message: "shanananananaa",
+          items: [
+            "stuff",
+            "more stuff",
+            "also things",
+            "and then some more stuff",
+          ],
+        },
+      });
+    </script>
+    <script>
+      var list = new Vue({
+        el: "#list",
+        data: {
+          items: [
+            "stuff again",
+            "more stuff here",
+            "also things are good",
+            "and then some other things",
+          ],
+        },
+      });
+    </script>
+  </body>
+</html>
