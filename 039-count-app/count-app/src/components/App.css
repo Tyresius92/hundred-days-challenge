@@ -1,0 +1,14 @@
+.app {
+  padding: 80px;
+}
+
+.countBox {
+  padding: 20px;
+}
+
+.secretButton {
+  color: aliceblue;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
