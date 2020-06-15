@@ -1,0 +1,36 @@
+{
+  "name": "national-parks-graph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest ./src/* --colors",
+    "start": "nodemon --exec babel-node src/index.js",
+    "prettify": "prettier --config .prettierrc.json --ignore-path .prettierignore --write \"src/**/*.js\"",
+    "checkPrettier": "prettier --config .prettierrc.json --ignore-path .prettierignore --check \"src/**/*.js\"",
+    "lint": "node_modules/.bin/eslint --color --ext js,jsx ./src",
+    "lintify": "node_modules/.bin/eslint --color --fix --ext js,jsx ./src",
+    "fix": "npm run prettify && npm run lintify && npm run sniff",
+    "smellsGood": "echo \"\\x1b[92mGreat success!! Your code smells goooood!\\x1b[0m\"",
+    "sniff": "npm run checkPrettier && npm run lint && npm run smellsGood"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.14.4",
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "babel-jest": "^26.0.1",
+    "eslint": "^7.2.0",
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
+  }
+}
