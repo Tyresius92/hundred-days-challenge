@@ -19,7 +19,7 @@ const generatePallet = (red, green, blue, steps = 10) => {
 
   const maxColorVal = Math.max(red, green, blue, 1);
 
-  const step = 255 / (maxColorVal * 10);
+  const step = 255 / (maxColorVal * steps);
 
   const seedArray = [...Array(steps).keys()];
 
