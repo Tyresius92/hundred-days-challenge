@@ -1,4 +1,5 @@
 import React from 'react';
+import ExtraPropTypes from 'react-extra-prop-types';
 import {
   AppBar,
   Toolbar,
@@ -8,7 +9,7 @@ import {
 } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles({
   appBar: {
     marginTop: '20px',
     top: 'auto',
@@ -17,13 +18,17 @@ const useStyles = makeStyles(theme => ({
   madeWithLove: {
     flexGrow: 1,
   },
-}));
+});
 
-const NavBar = props => {
+const NavBar = ({ color }) => {
   const classes = useStyles();
 
   return (
-    <AppBar position="sticky" className={classes.appBar}>
+    <AppBar
+      position="sticky"
+      className={classes.appBar}
+      style={{ backgroundColor: color }}
+    >
       <Toolbar>
         <Typography className={classes.madeWithLove}>
           Made with love by Tyrel
@@ -37,6 +42,10 @@ const NavBar = props => {
       </Toolbar>
     </AppBar>
   );
+};
+
+NavBar.propTypes = {
+  color: ExtraPropTypes.color.isRequired,
 };
 
 export default NavBar;

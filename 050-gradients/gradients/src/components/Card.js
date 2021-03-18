@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Card as MuiCard, makeStyles, CardHeader } from '@material-ui/core';
 
 const useStyles = makeStyles({
@@ -20,6 +21,11 @@ const Card = ({ title, children }) => {
       {children}
     </MuiCard>
   );
+};
+
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default Card;

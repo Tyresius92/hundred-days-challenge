@@ -5,27 +5,33 @@ import Card from './Card';
 import ColorSwatch from './ColorSwatch';
 import generatePallet from '../utils';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles({
   root: {
     flexGrow: 1,
     minHeight: '1vh',
   },
-}));
+});
 
-const isValidColorNum = color => {
-  return color !== '' && parseInt(color, 10) >= 0 && parseInt(color, 10) <= 255;
-};
+const isValidColorNum = color =>
+  color !== '' && parseInt(color, 10) >= 0 && parseInt(color, 10) <= 255;
 
-const isValidStepNum = steps => {
-  return (
-    steps !== '' &&
-    parseInt(steps, 10) > 0 &&
-    // more than 255 steps will result in duplicates (less might result in dupes too, but still)
-    parseInt(steps, 10) <= 255
-  );
-};
+const isValidStepNum = steps =>
+  steps !== '' &&
+  parseInt(steps, 10) > 0 &&
+  // more than 255 steps will result in duplicates
+  // (less might result in dupes too, but still)
+  parseInt(steps, 10) <= 255;
 
 const getRandomInt = max => Math.floor(Math.random() * max);
+
+const textFieldProps = {
+  type: 'number',
+  size: 'small',
+  InputLabelProps: {
+    shrink: true,
+  },
+  variant: 'outlined',
+};
 
 const App = () => {
   const classes = useStyles();
@@ -34,63 +40,50 @@ const App = () => {
   const [green, setGreen] = useState(getRandomInt(255));
   const [blue, setBlue] = useState(getRandomInt(255));
   const [steps, setSteps] = useState(getRandomInt(10));
-  const [pallet, setPallet] = useState(generatePallet(red, green, blue, steps));
+  const [pallet, setPallet] = useState(
+    generatePallet({ red, green, blue }, steps)
+  );
+
+  const rgbString = `rgb(${parseInt(red, 10)},${parseInt(green, 10)},${parseInt(
+    blue,
+    10
+  )})`;
 
   return (
     <div className={classes.root}>
       <Container>
         <Card title="Enter your initial color">
           <TextField
+            {...textFieldProps}
             id="red-number"
             label="Red"
-            type="number"
-            size="small"
             error={!isValidColorNum(red)}
-            InputLabelProps={{
-              shrink: true,
-            }}
             value={red}
             onChange={e => setRed(e.target.value)}
-            variant="outlined"
           />
           <TextField
+            {...textFieldProps}
             id="green-number"
             label="Green"
-            type="number"
-            size="small"
             error={!isValidColorNum(green)}
-            InputLabelProps={{
-              shrink: true,
-            }}
             value={green}
             onChange={e => setGreen(e.target.value)}
-            variant="outlined"
           />
           <TextField
+            {...textFieldProps}
             id="blue-number"
             label="Blue"
-            type="number"
-            size="small"
             error={!isValidColorNum(blue)}
-            InputLabelProps={{
-              shrink: true,
-            }}
             value={blue}
             onChange={e => setBlue(e.target.value)}
-            variant="outlined"
           />
           <TextField
-            id="blue-number"
+            {...textFieldProps}
+            id="number-of-hues"
             label="Number of Hues"
-            type="number"
-            size="small"
             error={!isValidStepNum(steps)}
-            InputLabelProps={{
-              shrink: true,
-            }}
             value={steps}
             onChange={e => setSteps(e.target.value)}
-            variant="outlined"
           />
           <Button
             color="primary"
@@ -105,9 +98,11 @@ const App = () => {
             onClick={() =>
               setPallet(
                 generatePallet(
-                  parseInt(red, 10),
-                  parseInt(green, 10),
-                  parseInt(blue, 10),
+                  {
+                    red: parseInt(red, 10),
+                    green: parseInt(green, 10),
+                    blue: parseInt(blue, 10),
+                  },
                   parseInt(steps, 10)
                 )
               )
@@ -119,9 +114,7 @@ const App = () => {
             style={{
               width: '20%',
               margin: '20px auto',
-              backgroundColor: `rgb(${parseInt(red, 10)},
-              ${parseInt(green, 10)},
-              ${parseInt(blue, 10)})`,
+              backgroundColor: rgbString,
               height: '40px',
               borderRadius: '8px',
             }}
@@ -135,7 +128,7 @@ const App = () => {
           </Container>
         </Card>
       </Container>
-      <NavBar color={`rgb(${red},${green},${blue})`} />
+      <NavBar color={rgbString} />
     </div>
   );
 };
