@@ -1,6 +1,8 @@
 # Infinite Scroll Component
 
-This project is an infinite scroll component
+This project creates infinite scroll functionality in a React hook!
+
+https://user-images.githubusercontent.com/28957445/111572732-937d7080-877f-11eb-9892-f36a79570712.mov
 
 ### Idea Source
 
@@ -28,4 +30,4 @@ Infinite scroll is not anywhere near as hard as I thought it was.
 
 ### Thing to Celebrate / Moment of Gratitude
 
-I now has a custom hook that I can drop into almost ANY future project I have!
+I now have a custom hook that I can drop into almost ANY future project I have!
