@@ -2,6 +2,9 @@
 
 This project is a simple form where you can put in an RGB color code, and get back a gradient - a color pallet which gives different shades of that color. 
 
+<img width="1792" alt="Screen Shot 2021-03-18 at 12 11 28 AM" src="https://user-images.githubusercontent.com/28957445/111572503-13efa180-877f-11eb-8932-15ab563baa9a.png">
+
+
 ### Idea Source
 
 Various tools online, but I was just interested in some of that color theory stuff. 
